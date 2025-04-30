@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tristan Parrish – Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fa;
+      color: #222;
+    }
+    header {
+      background: url('background_header.jpg') no-repeat center center/cover;
+      padding: 100px 40px;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+    header h1 {
+      font-size: 42px;
+      margin: 0;
+    }
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .project {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    .project img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .project-content {
+      padding: 20px;
+    }
+    .project h2 {
+      font-size: 20px;
+      margin: 0 0 10px;
+    }
+    .meta {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 15px;
+    }
+    .project p {
+      margin: 5px 0;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tristan Parrish</h1>
+  <p>Product Strategy | Real Estate Innovation | Customer Experience</p>
+</header>
+
+<div class="container">
+  <div class="grid">
+    <div class="project">
+      <img src="https://via.placeholder.com/600x400?text=Art+Source+Platform" alt="Art Source Platform" />
+      <div class="project-content">
+        <h2>Art Source Expansion Platform</h2>
+        <div class="meta">Director / Product Visionary · 2022–2023</div>
+        <p><strong>Challenge:</strong> Expand into new markets while improving UX.</p>
+        <p><strong>Process:</strong> Led onboarding platform, CMS rollout, and UX journey mapping.</p>
+        <p><strong>Outcome:</strong> 40% faster bookings, 22% higher conversion, 3x growth.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="https://via.placeholder.com/600x400?text=Customer+Experience+Optimization" alt="Customer Experience Optimization" />
+      <div class="project-content">
+        <h2>Customer Experience Optimization</h2>
+        <div class="meta">Business Owner / Experience Designer · 2021–2022</div>
+        <p><strong>Challenge:</strong> Disjointed engagement and unclear messaging.</p>
+        <p><strong>Process:</strong> Streamlined CRM, retrained staff, and aligned communications.</p>
+        <p><strong>Outcome:</strong> 35% higher retention, NPS up from 6.2 to 8.7.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="https://via.placeholder.com/600x400?text=Real+Estate+Dashboard" alt="Real Estate Dashboard" />
+      <div class="project-content">
+        <h2>Real Estate Client Dashboard</h2>
+        <div class="meta">Market Analyst / Real Estate Advisor · 2019–2020</div>
+        <p><strong>Challenge:</strong> Overwhelmed clients due to data fragmentation.</p>
+        <p><strong>Process:</strong> Built centralized dashboard with comps, maps, and calculators.</p>
+        <p><strong>Outcome:</strong> 50% faster decisions and 2.5x higher close rate.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Tristan Parrish. Designed for clarity and purpose.
+</footer>
+
+</body>
+</html>
